@@ -1,0 +1,21 @@
+@font-face {
+    font-family: Pokemon;
+    src: url(../fonts/Pokemon\ Hollow.ttf);
+}
+
+@font-face {
+    font-family: Pokemon-solid;
+    src: url(../fonts/Pokemon\ Solid.ttf);
+}
+:root{
+    --amarelo: #ffcc03;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: transparent;
+    font-family: Pokemon-solid; 
+    letter-spacing: 3px;
+}
