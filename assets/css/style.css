@@ -1,9 +1,23 @@
+:root{
+    --azul: #074973;
+    --azulclaro: #056CF2;
+    --amarelo: #F2AB27;
+    --amarelopikachu: #ffcc03;
+    --laranja: #F27329;
+    --branco: #F2F2F2;
+    --vermelho: #D90416;
+    --vermelhoclaro: #F22E2E;
+}
+body{
+    background-image: url(../images/cenario2.jpg);
+    background-repeat: no-repeat;    
+    object-fit: cover;
+}
 .login-form{
     align-items: center;
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-color: grey;
     justify-content: center;
 }
 .login-header{
@@ -14,16 +28,42 @@
     margin-bottom:30px;
 }
 .login-header img{
-    width: 80px;
+    width: 150px;
+}
+.login-header h1{
+    font-size: 25px;
+    color: var(--azul);
+    text-shadow: 2px 2px 2px var(--branco);
 }
 .login-input{
     border: 2px solid #333;
     border-radius: 5px;
     color: #333;
     margin-bottom: 15px;
-    max-width: 300px;
+    max-width: 350px;
     width: 100%;
-    padding: 10px;
+    padding: 1rem;
     outline: none;
     font-size: 15px;
+}
+
+.login-button{
+    font-size: 15px;
+    background-color: var(--azul);
+    color: var(--amarelopikachu);
+    padding: 1rem;
+    max-width: 350px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 10px;  
+    transition: all .5;  
+}
+.login-button:hover{
+    background-color: var(--amarelo);
+    color: var(--azul);
+}
+.login-button:disabled{
+    background-color: #eee;
+    color: #aaa;
+    cursor: auto;
 }
