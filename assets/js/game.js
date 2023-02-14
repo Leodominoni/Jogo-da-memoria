@@ -1,4 +1,5 @@
 const grid = document.querySelector('.grid')
+const treinador = document.querySelector('.treinador')
 
 const pokemons = ['pokemon00','pokemon01','pokemon02','pokemon03','pokemon04','pokemon05','pokemon06','pokemon07','pokemon08', 'pokemon09']
 
@@ -89,4 +90,11 @@ const game = () =>{
         grid.appendChild(card)
     })
 }
-game()
+
+window.onload = () => {
+
+    const treinadorName = localStorage.getItem('treinador')
+
+    treinador.innerHTML = `Treinador(a) ${treinadorName}`
+    game()
+}
