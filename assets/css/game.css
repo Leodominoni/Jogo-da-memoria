@@ -1,8 +1,10 @@
 body{
-    background-image: url(../images/cenariopokemon.jpeg);
+    background-image: url(../images/cenario1.png);
     background-repeat: no-repeat;    
+    background-size: cover;
     object-fit: cover;
 }
+
 .grid{
     display: grid;
     grid-template-columns: repeat(5,1fr);
@@ -15,7 +17,6 @@ body{
     aspect-ratio: 3/4;
     width: 100%;
     border-radius: 8px;
-    background-color: green;
     position: relative;
     transition: all 400ms ease;
     transform-style: preserve-3d; /* preversar comportamento 3D */
@@ -27,6 +28,7 @@ body{
     position: absolute;
     border: 1px solid #ffcc03;
     border-radius: 8px;  
+    transition: all 500ms;
 }
 .frente{
    transform: rotateY(180deg);
@@ -39,6 +41,11 @@ body{
     background-position: center;
     backface-visibility: hidden; /* esconder o lado */
 }
-.card:hover{
+
+.revelar-card{
     transform: rotateY(180deg);
+}
+.disable-card{
+    filter: saturate(0);
+    opacity: .8;
 }
