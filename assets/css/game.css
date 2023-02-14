@@ -1,17 +1,27 @@
 body{
     background-image: url(../images/cenario1.png);
-    background-repeat: no-repeat;    
-    background-size: cover;
+    background-repeat: no-repeat; 
+    background-size: cover;  
     object-fit: cover;
+    margin: 15px;
 }
-
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 50vh;
+    align-items: center;
+    justify-content: center;
+    color: #F2AB27; 
+    font-size: 25px;
+}
 .grid{
     display: grid;
     grid-template-columns: repeat(5,1fr);
     gap:15px;
     width: 100%;
     max-width: 800px;
-    margin: 80px auto;
+    margin: 10px auto;
 }
 .card{
     aspect-ratio: 3/4;
@@ -48,4 +58,10 @@ body{
 .disable-card{
     filter: saturate(0);
     opacity: .8;
+}
+@media (max-width:750px){
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
 }
